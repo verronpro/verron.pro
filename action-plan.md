@@ -42,11 +42,11 @@
 - [x] **Update your LinkedIn headline** to: “Caring Coder | CISO | Crafting Enterprise Java & Secure AI Document Solutions.” Pin a post linking to the new About page.
 
 ### 📦 Office-Stamper Integration (Week 1)
-- [ ] **Revamp the `README.md` of `office-stamper`:**
+- [x] **Revamp the `README.md` of `office-stamper`:**
     - Add an “Author” section with your bio and a clear link to the blog.
     - Create a “Who Uses This?” section (ask one user for permission, or list “Used in energy sector document automation”).
     - Add contextual links to relevant blog posts (e.g., after the Quick Start: “*Read the architectural deep dive on the blog*”).
-- [ ] **Add a global navigation bar to `verron.pro`** that includes a **“Projects”** page. This page should feature `office-stamper` with a summary and links to docs, source, and blog posts.
+- [x] **Add a global navigation bar to `verron.pro`** that includes a **“Projects”** page. This page should feature `office-stamper` with a summary and links to docs, source, and blog posts.
 
 ---
 

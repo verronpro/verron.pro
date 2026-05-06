@@ -11,11 +11,61 @@ This page tracks current projects and initiatives I’m actively building, along
 
 Tip: Items marked with “seeded from Resources” originate from the curated list on [/resources.html](/resources.html).
 
-## Ongoing projects
+## Office‑stamper
 
-- Office‑stamper (Java) — **Stable Core**
-  - Scope: tighten template semantics (placeholders, invariants, pre/post‑processing).
-  - Status: **Shipped 3.1 & 3.2**. Resettable iterators are now live, improving code readability. Pre-processing and post-processing are equally shipped, enhancing context management for nested scope resolutions.
+**A Java template engine for dynamic DOCX generation — secure by default, crafted with care.**
+
+Office‑stamper lets you design a Word template in your favourite processor and stamp it at runtime with any Java object as context.
+It uses Spring Expression Language (SpEL) for powerful, type-safe expressions and preserves all formatting from the original template.
+
+**Why it exists:** generating schema-compliant `.docx` files programmatically is harder than it looks.
+Office‑stamper handles the edge cases — nested repeats, conditional sections, table rows, image insertion, and more — so you don't have to.
+
+### Key links
+
+| | |
+|---|---|
+| 📦 **Source** | [github.com/verronpro/office-stamper](https://github.com/verronpro/office-stamper) |
+| 📖 **Docs** | [office-stamper.verron.pro](https://office-stamper.verron.pro/engine) |
+| 🚀 **Latest release** | v3.3 — SVG support, smart tag validation, hardened SpEL security |
+| 🪪 **License** | MIT |
+
+### Quick start
+
+```xml
+<dependency>
+  <groupId>pro.verron.office-stamper</groupId>
+  <artifactId>engine</artifactId>
+  <version>3.3</version>
+</dependency>
+```
+
+```java
+var stamper = OfficeStampers.docxStamper();
+try (var template = Files.newInputStream(templatePath);
+     var output  = Files.newOutputStream(outputPath)) {
+    stamper.stamp(template, context, output);
+}
+```
+
+### Stories behind the code
+
+- [The Expression Pivot — Harnessing Spring SpEL](/2026/03/01/monthly-topic-the-expression-pivot-harnessing-spring-spel.html)
+- [Predicting the Unpredictable — the v3 Overhaul](/2025/12/15/monthly-topic-predicting-the-unpredictable-v3-overhaul.html)
+- [Office-stamper 3.1 — Stabilizing the Surface](/2026/01/01/monthly-commit-office-stamper-3-1-stabilizing-the-surface.html)
+- [Feedback Loops and the AsciiDoc Pivot](/2026/02/01/monthly-commit-feedback-loops-and-the-asciidoc-pivot.html)
+- [Engine Refactoring — the Road to v3](/2025/11/01/monthly-commit-engine-refactoring-the-road-to-v3.html)
+- [Expression Safety Patterns with SpEL](/2026/05/17/monthly-topic-expression-safety-patterns-with-spel.html)
+
+### Current status
+
+- **Shipped:** v3.3 — SVG support, smart tag attribute validation, hardened XML parser for XXE/DTD mitigation.
+- **In progress:** imageio unification and vector format support (EMF, WMF, SVG).
+- **Used in:** energy sector document automation in China, where strict schema compliance and security are non-negotiable.
+
+---
+
+## Other ongoing projects
 
 - Docs‑as‑Code pipelines for diagrams — seeded from Resources.
   - Scope: standardize PlantUML/Mermaid/Graphviz flows via Kroki; ensure diagrams build in CI alongside docs.
