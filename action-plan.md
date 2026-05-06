@@ -1,4 +1,4 @@
-## 🗓️ Master Action Plan: 4-Week Visibility & Trust Sprint
+﻿## 🗓️ Master Action Plan: 4-Week Visibility & Trust Sprint
 
 ### 🔑 Legend
 - 🛠️ Technical SEO
@@ -32,13 +32,13 @@
 - [x] **Implement `rel=canonical` tags** on all pages to self-reference, protecting against future duplicate content.
 
 ### 🧑‍💻 Professional Image – About Page Overhaul
-- [ ] **Add a professional headshot.**
-- [ ] **Clearly state your title and role:** “IT Manager & CISO in the energy sector in China.”
-- [ ] **Add a “Trust & Proof” section:**
+- [x] **Add a professional headshot.**
+- [x] **Clearly state your title and role:** “IT Manager & CISO in the energy sector in China.”
+- [x] **Add a `Trust & Proof` section:**
     - GitHub star/forks/download statistics for office-stamper (using shields.io badges).
     - 1–2 short user testimonials or quotes from resolved issues.
     - Links to any certifications, publications, or past speaking engagements.
-- [ ] **Write a “Professional Philosophy” sentence** that ties together “Caring Coder,” security, and AI.
+- [x] **Write a Professional Philosophy sentence** that ties together “Caring Coder,” security, and AI.
 - [ ] **Update your LinkedIn headline** to: “Caring Coder | CISO | Crafting Enterprise Java & Secure AI Document Solutions.” Pin a post linking to the new About page.
 
 ### 📦 Office-Stamper Integration (Week 1)
