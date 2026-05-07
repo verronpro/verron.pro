@@ -23,8 +23,7 @@ that compound over time.
 
 Today, I serve as the **IT Manager and CISO** for the Chinese subsidiary of a
 major organization in the energy sector. While my daily focus is on IT
-leadership and security, I remain a passionate software craftsman. I maintain *
-*Office-stamper** as a dedicated hobby and partner with fellow
+leadership and security, I remain a passionate software craftsman. I maintain **Office-stamper** as a dedicated hobby and partner with fellow
 self-entrepreneurs in China on small-scale, software-oriented projects.
 
 ---
@@ -35,7 +34,7 @@ self-entrepreneurs in China on small-scale, software-oriented projects.
 > complexity. Security, reliability, and clear documentation are not
 > constraints; they are necessary for a successful product. In an age where AI
 > can scaffold anything in seconds, the differentiator is the engineer who
-> understands *why* it works, *what* will break, and *how* to keep the product
+> understands *why* it works, *what* is about to break, and *how* to keep the product
 > trustworthy.
 
 ---
@@ -65,7 +64,7 @@ pipeline."*
 > — Oil & Gas enterprise Java team
 
 > *"The stamping logic is sound, and I had .pptx slides working as expected in a
-few hours. Shame that the library doesn't support more complex template
+few hours. Shame that the engine doesn't support more complex template
 structures."*
 > — Energy-sector independent R&D developer
 
@@ -74,7 +73,7 @@ structures."*
 - Maintainer of [office-stamper](https://github.com/verronpro/office-stamper) —
   actively maintained since 2022. Forked
   from [docx-stamper](https://github.com/thombergs/docx-stamper).
-- Regular contributor to the Java craftsmanship community via [verron.pro](/).
+- Contributor to the Java craftsmanship community via [verron.pro](/).
 - IT Manager & CISO with hands-on experience securing enterprise infrastructure
   in the energy sector.
 
@@ -132,7 +131,7 @@ and keep documentation, code, and architecture aligned.
 2. **Template and document automation**: I maintain **Office‑stamper**, used to
    generate .docx/.pptx/.xlsx from real templates safely and testably.
 3. **Testing as infrastructure**: Characterization tests make legacy safer to
-   change; CI pipelines validate docs and diagrams.
+   change; CI pipelines validate deliverables, docs and diagrams.
 4. **Developer experience**: Git hygiene, commit conventions, and helpful
    automation.
 
@@ -143,5 +142,5 @@ and keep documentation, code, and architecture aligned.
 {:#resources}
 
 I maintain a curated catalog of tools, references, and inspirations that I use
-in my daily work. You can find the full list on the
+in my work. You can find the full list on the
 standalone [Resources](/resources.html) page.
