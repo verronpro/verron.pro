@@ -200,10 +200,6 @@ Reusable includes for presentation live under `_includes/home/*`, `_includes/pos
 - `_includes/home/hero.html`: top landing hero with CTA. `_includes/home/cards.html`: 3 services cards.
 - `_includes/footer/custom.html`: site footer with quick links and social.
 
-Header include: `_includes/header/cta.html` provides a sticky header with simple nav and a persistent “Hire me”
-  CTA. Include it at the top of pages if the theme layout doesn’t already render a header, or when you want this
-  variant.
-
 Structured data: `_includes/head/structured-data.html` injects JSON‑LD (`WebSite` for general pages, `BlogPosting`
   for posts). It is included from `_includes/head/favicon.html` so it is available across the site.
 
