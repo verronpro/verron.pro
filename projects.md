@@ -66,13 +66,13 @@ try (var template = Files.newInputStream(templatePath);
 
 ## Other ongoing projects
 
-- Docs‑as‑Code pipelines for diagrams — seeded from Resources.
-  - Scope: standardize PlantUML/Mermaid/Graphviz flows via Kroki; ensure diagrams build in CI alongside docs.
-  - Status: ongoing; looking to publish a minimal starter and a checklist.
-
-- Site hygiene and authoring ergonomics — seeded from Resources
-  - Scope: small fixes to navigation, structured data, and print styles; keep content and assets tidy.
-  - Status: ongoing; incremental.
+- Le cloud familial — https://cloud.verron.pro/
+- L'espace de Pascal — https://pascal.verron.pro/
+- Les recettes d'Yvette — https://yvette.verron.pro/
+- use Documentero as inspiration and office-stamper as technical base for my own word processing SaaS
+- Isabelle Muñoz, Ennoblisseur textile à l'habit en roses — https://habit-en-roses.fr/
+- Hugues Malbreil, Sculpteur — https://malbreil.fr/
+- Docs‑as‑Code pipelines for diagrams
 
 # Next ideas / backlog
 
@@ -84,10 +84,8 @@ try (var template = Files.newInputStream(templatePath);
   - Description: generate images that mimic editor chrome, and a sample document layout from a simple text input.
   - Status: **Prototype phase**. Using JavaFX as the graphical engine and the Office-stamper AsciiDoc module to compile formatted text to a JavaFX Scene. Rendering is functional but still needs refinement for clean, usable outputs.
 
-- Link checker CI for this site — seeded from Resources
-  - Description: lightweight GitHub Action to validate internal and external links on PRs.
-  - Output: `ruby/setup-ruby` + `htmlproofer` pipeline with a short allowlist for known false positives.
-
+- Le coin des fantasmes — http://fantas.me
+- Best emails — http://isda.best and http://isze.best
 - Diagram‑as‑Code cookbook — seeded from Resources
   - Description: practical snippets for PlantUML, Mermaid, and Graphviz (themes, layout tricks, and export recipes) with copy‑paste ready examples.
   - Output: post series, or a dedicated repo linked from the blog.
