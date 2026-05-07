@@ -40,21 +40,23 @@ Office‑stamper handles the edge cases — nested repeats, conditional sections
 ```
 
 ```java
-var stamper = OfficeStampers.docxStamper();
-try (var template = Files.newInputStream(templatePath);
-     var output  = Files.newOutputStream(outputPath)) {
-    stamper.stamp(template, context, output);
+void main(){
+  var stamper = OfficeStampers.docxStamper();
+  try (var template = Files.newInputStream(templatePath);
+       var output  = Files.newOutputStream(outputPath)) {
+      stamper.stamp(template, context, output);
+  }
 }
 ```
 
 ### Stories behind the code
 
-- [The Expression Pivot — Harnessing Spring SpEL](/2026/03/01/monthly-topic-the-expression-pivot-harnessing-spring-spel.html)
-- [Predicting the Unpredictable — the v3 Overhaul](/2025/12/15/monthly-topic-predicting-the-unpredictable-v3-overhaul.html)
-- [Office-stamper 3.1 — Stabilizing the Surface](/2026/01/01/monthly-commit-office-stamper-3-1-stabilizing-the-surface.html)
-- [Feedback Loops and the AsciiDoc Pivot](/2026/02/01/monthly-commit-feedback-loops-and-the-asciidoc-pivot.html)
-- [Engine Refactoring — the Road to v3](/2025/11/01/monthly-commit-engine-refactoring-the-road-to-v3.html)
-- [Expression Safety Patterns with SpEL](/2026/05/17/monthly-topic-expression-safety-patterns-with-spel.html)
+- [The Expression Pivot — Harnessing Spring SpEL]({% post_url 2026-03-01-monthly-topic-the-expression-pivot-harnessing-spring-spel %})
+- [Predicting the Unpredictable — the v3 Overhaul]({% post_url 2025-12-15-monthly-topic-predicting-the-unpredictable-v3-overhaul %})
+- [Office-stamper 3.1 — Stabilizing the Surface]({% post_url 2026-01-01-monthly-commit-office-stamper-3-1-stabilizing-the-surface %})
+- [Feedback Loops, and the AsciiDoc Pivot]({% post_url 2026-02-01-monthly-commit-feedback-loops-and-the-asciidoc-pivot %})
+- [Engine Refactoring — the Road to v3]({% post_url 2025-11-01-monthly-commit-engine-refactoring-the-road-to-v3 %})
+- TODO post 2026-05-17-monthly-topic-expression-safety-patterns-with-spel [Expression Safety Patterns with SpEL]()
 
 ### Current status
 

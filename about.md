@@ -73,7 +73,7 @@ structures."*
 - Maintainer of [office-stamper](https://github.com/verronpro/office-stamper) —
   actively maintained since 2022. Forked
   from [docx-stamper](https://github.com/thombergs/docx-stamper).
-- Contributor to the Java craftsmanship community via [verron.pro](/).
+- Contributor to the Java craftsmanship community via [verron.pro]({{ site.base_url }}).
 - IT Manager & CISO with hands-on experience securing enterprise infrastructure
   in the energy sector.
 
@@ -82,15 +82,15 @@ structures."*
 ## Interests
 
 - **Docs‑as‑Code** pipelines and governance.
-- **Virtual Team & Automated Bots**: Using tools like SonarQube and PIT to enforce
-  quality as a solo maintainer.
+- **Virtual Team & Automated Bots**: Using tools like SonarQube and PIT to
+  enforce quality as a solo maintainer.
 - **GenAI for rapid scaffolding**: Leveraging AI to accelerate the initial
   phases of lean tool development.
 - **Developer Experience (DevX)**, automation, and CI/CD.
 
-If you're curious about what I'm working on, the [Projects](/projects.html) page
-highlights recent work; the full list of posts is in
-the [Archive](/archive.html).
+If you're curious about what I'm working on, the [Projects]({% link
+projects.md %}) page highlights recent work; the full list of posts is in
+the [Archive]({% link archive.md %}).
 
 ---
 
@@ -143,4 +143,4 @@ and keep documentation, code, and architecture aligned.
 
 I maintain a curated catalog of tools, references, and inspirations that I use
 in my work. You can find the full list on the
-standalone [Resources](/resources.html) page.
+standalone [Resources]({% link resources.md %}) page.

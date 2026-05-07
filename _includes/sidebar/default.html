@@ -36,7 +36,7 @@
   {% endif %}
 
   <div class="card">
-    <h3>Search</h3>
+    <h3><label for="search-input">Search</label></h3>
     <div id="search-container">
       <input type="text" id="search-input" placeholder="Search posts..." style="width: stretch; padding: 0.5rem; border: 1px solid var(--cc-border); border-radius: 4px; background: var(--cc-bg); color: var(--cc-text);">
       <ul id="results-container" style="list-style: none; padding-left: 0; margin-top: 0.5rem; max-height: 300px; overflow-y: auto;"></ul>
@@ -57,16 +57,9 @@
     <h3>About</h3>
     <p>I'm Joseph Verron — software craftsmanship coach and docs‑as‑code practitioner. I help teams build reliable systems and clear documentation.</p>
     <p class="muted" style="margin-top:.5rem">
-      <a href="{{ site.baseurl }}/about.html">More about me</a> ·
-      <a href="{{ site.baseurl }}/archive.html">Archive</a>
+      <a href="{% link about.md %}">More about me</a> ·
+      <a href="{% link archive.md %}">Archive</a>
     </p>
   </div>
 
-  <div class="card">
-    <h3>Ideas & Ongoing Projects</h3>
-    <p>A living list of experiments, small initiatives, and future posts I’d like to tackle.</p>
-    <p style="margin-top:.5rem">
-      <a href="{{ site.baseurl }}/ideas.html">Explore ideas</a>
-    </p>
-  </div>
 </aside>
