@@ -9,8 +9,6 @@ aside:
 
 This page tracks current projects and initiatives I’m actively building, along with a focused backlog of work in progress. If you want to collaborate on any of these, or if a topic would help your team, reach out via LinkedIn (see About) or GitHub issues.
 
-Tip: Items marked with “seeded from Resources” originate from the curated list on [/resources.html](/resources.html).
-
 ## Office‑stamper
 
 **A Java template engine for dynamic DOCX generation — secure by default, crafted with care.**
@@ -18,7 +16,7 @@ Tip: Items marked with “seeded from Resources” originate from the curated li
 Office‑stamper lets you design a Word template in your favourite processor and stamp it at runtime with any Java object as context.
 It uses Spring Expression Language (SpEL) for powerful, type-safe expressions and preserves all formatting from the original template.
 
-**Why it exists:** generating schema-compliant `.docx` files programmatically is harder than it looks.
+**Why it exists:** generating `.docx` files programmatically and compliant to company graphic guidelines is harder than it looks.
 Office‑stamper handles the edge cases — nested repeats, conditional sections, table rows, image insertion, and more — so you don't have to.
 
 ### Key links
@@ -38,6 +36,7 @@ Office‑stamper handles the edge cases — nested repeats, conditional sections
   <artifactId>engine</artifactId>
   <version>3.3</version>
 </dependency>
+<!-- also include your version of docx4j -->
 ```
 
 ```java
