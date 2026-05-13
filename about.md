@@ -137,10 +137,10 @@ and keep documentation, code, and architecture aligned.
 
 ---
 
-## Resources
+## Practices & Tools
 
-{:#resources}
+{:#tools}
 
 I maintain a curated catalog of tools, references, and inspirations that I use
 in my work. You can find the full list on the
-standalone [Resources]({% link resources.md %}) page.
+standalone [Practices & Tools]({% link tools.md %}) page.

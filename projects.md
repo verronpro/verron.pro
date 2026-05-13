@@ -88,13 +88,13 @@ void main(){
 
 - Le coin des fantasmes — http://fantas.me
 - Best emails — http://isda.best and http://isze.best
-- Diagram‑as‑Code cookbook — seeded from Resources
+- Diagram‑as‑Code cookbook — seeded from Practices & Tools
   - Description: practical snippets for PlantUML, Mermaid, and Graphviz (themes, layout tricks, and export recipes) with copy‑paste ready examples.
   - Output: post series, or a dedicated repo linked from the blog.
 
 - Presentations‑as‑Code starter
   - Description: a thin starter showing Reveal.js or Marp with syntax‑highlighting presets and CI export to PDF.
-  - Output: repo and short guide; link from the blog's Resources.
+  - Output: repo and short guide; link from the blog's Practices & Tools.
 
 ## How I prioritize
 
