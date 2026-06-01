@@ -17,14 +17,17 @@ description: Joseph Verron — IT Manager & CISO in the energy sector in China, 
 </div>
 
 I'm Joseph Verron. I help software teams build reliable systems and clear
-documentation. My work sits at the intersection of software craftsmanship and
-docs‑as‑code: practical techniques, repeatable pipelines, and small improvements
-that compound over time.
+documentation. My work sits at the intersection of software craftsmanship,
+document automation, security, and docs‑as‑code: practical techniques,
+repeatable pipelines, and small improvements that compound over time.
 
 Today, I serve as the **IT Manager and CISO** for the Chinese subsidiary of a
 major organization in the energy sector. While my daily focus is on IT
-leadership and security, I remain a passionate software craftsman. I maintain **Office-stamper** as a dedicated hobby and partner with fellow
-self-entrepreneurs in China on small-scale, software-oriented projects.
+leadership and security, I remain a passionate software craftsman. I maintain
+**Office-stamper** as the origin project of a broader open-source ecosystem
+around document generation, testing, publishing, and project presentation. I
+also partner with fellow self-entrepreneurs in China on small-scale,
+software-oriented projects.
 
 ---
 
@@ -43,7 +46,7 @@ self-entrepreneurs in China on small-scale, software-oriented projects.
 
 {:#trust}
 
-### Office-stamper — Open-Source Java Library
+### Office-stamper ecosystem — Open-Source Document Automation
 
 [![GitHub Stars](https://img.shields.io/github/stars/verronpro/office-stamper?style=flat-square&logo=github&label=Stars)](https://github.com/verronpro/office-stamper/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/verronpro/office-stamper?style=flat-square&logo=github&label=Forks)](https://github.com/verronpro/office-stamper/network/members)
@@ -55,6 +58,22 @@ from real Word/PowerPoint templates using flexible data sources — safely and
 testably, while harnessing the full power of a programming language to express
 complex templates. It is used in energy-sector document automation and by Java
 teams who need to let business-facing users write the templates.
+
+What started as Office-stamper is now growing into a small ecosystem of related
+tools:
+
+- **document templating**, with Office-stamper as the origin project;
+- **vector-image format support**, to improve rendering and embedding workflows
+  around office documents;
+- **textual representations of Word documents**, to make examples, tests, and
+  document structures easier to review;
+- **Maven-based project publishing**, to give related project sites a coherent
+  visual identity.
+
+The goal is product-oriented but open-source friendly: build practical tools
+that solve real document-automation problems, while keeping the work reusable,
+documented, and inspectable.
+
 
 ### What users say
 
@@ -81,7 +100,11 @@ structures."*
 
 ## Interests
 
+- **Document automation** around Word, PowerPoint, templates, and generated
+  deliverables.
 - **Docs‑as‑Code** pipelines and governance.
+- **Open-source product development**: turning reusable project needs into
+  maintained, documented libraries and tools.
 - **Virtual Team & Automated Bots**: Using tools like SonarQube and PIT to
   enforce quality as a solo maintainer.
 - **GenAI for rapid scaffolding**: Leveraging AI to accelerate the initial

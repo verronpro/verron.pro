@@ -2,12 +2,19 @@
 layout: page
 title: Projects
 permalink: /projects.html
-description: A living list of ongoing work and projects I’m actively building — from docs-as-code tooling to Office automation experiments.
+description: A living list of ongoing work and projects I’m actively building — from Office automation to document testing, vector rendering, and Maven-based publishing.
 aside:
   toc: true
 ---
 
-This page tracks current projects and initiatives I’m actively building, along with a focused backlog of work in progress. If you want to collaborate on any of these, or if a topic would help your team, reach out via LinkedIn (see About) or GitHub issues.
+This page tracks current projects and initiatives I’m actively building, along
+with a focused backlog of work in progress. Office-stamper is the origin project:
+what started as a Java template engine for Office documents is now expanding
+into a broader ecosystem around document automation, testing, rendering,
+publishing, and project presentation.
+
+If you want to collaborate on any of these, or if a topic would help your team,
+reach out via LinkedIn (see About) or GitHub issues.
 
 ## Office‑stamper
 
@@ -21,12 +28,12 @@ Office‑stamper handles the edge cases — nested repeats, conditional sections
 
 ### Key links
 
-| | |
-|---|---|
-| 📦 **Source** | [github.com/verronpro/office-stamper](https://github.com/verronpro/office-stamper) |
-| 📖 **Docs** | [office-stamper.verron.pro](https://office-stamper.verron.pro/engine) |
-| 🚀 **Latest release** | v3.3 — SVG support, smart tag validation, hardened SpEL security |
-| 🪪 **License** | MIT |
+|                       |                                                                                    |
+|-----------------------|------------------------------------------------------------------------------------|
+| 📦 **Source**         | [github.com/verronpro/office-stamper](https://github.com/verronpro/office-stamper) |
+| 📖 **Docs**           | [office-stamper.verron.pro](https://office-stamper.verron.pro/engine)              |
+| 🚀 **Latest release** | v3.3 — SVG support, smart tag validation, hardened SpEL security                   |
+| 🪪 **License**        | MIT                                                                                |
 
 ### Quick start
 
@@ -61,8 +68,46 @@ void main(){
 ### Current status
 
 - **Shipped:** v3.3 — SVG support, smart tag attribute validation, hardened XML parser for XXE/DTD mitigation.
-- **In progress:** imageio unification and vector format support (EMF, WMF, SVG).
+- **In progress:** ecosystem consolidation around vector-image support, textual document testing, and Maven-based publishing.
 - **Used in:** energy sector document automation in China, where strict schema compliance and security are non-negotiable.
+
+---
+
+## Office-stamper ecosystem
+
+Office-stamper remains the origin project, but the work around it has become
+larger than a single template engine. The surrounding projects address recurring
+needs that appear when document automation becomes a real product concern:
+rendering fidelity, testability, documentation, and coherent presentation.
+
+### Vector-image format support
+
+Office documents often need diagrams, logos, and technical illustrations to
+remain sharp and editable across export pipelines. This work focuses on ImageIO
+plugins and related tooling for vector-image formats, with the goal of improving
+support for formats commonly encountered in Office automation workflows.
+
+The ambition is to make vector assets easier to load, test, convert, and embed
+when producing Word or PowerPoint documents programmatically.
+
+### Textual Word-document representation
+
+Testing generated Word documents is difficult when the only artifact is a binary
+`.docx` file. The AsciiDoc-oriented tooling explores a more reviewable approach:
+representing relevant document structures in a textual form so they can be
+tested, compared, documented, and discussed like source code.
+
+This supports the broader Office-stamper goal: make document generation not only
+powerful, but observable and maintainable.
+
+### Maven-based visual identity
+
+The Maven skin work helps give related Maven-generated sites a consistent visual
+identity. It supports the product side of the ecosystem: documentation should not
+only exist, it should feel coherent across projects.
+
+The goal is to make project sites easier to recognize, navigate, and maintain,
+while keeping the publishing workflow close to standard Maven practices.
 
 ---
 
