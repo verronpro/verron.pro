@@ -19,21 +19,36 @@ Requirements
 
 Setup
 
+The blog can be managed using either native Jekyll commands (requires Ruby) or via Maven (preferred for project consistency).
+
+### Option A: Maven
+
+1) Build the site
+    - `mvn compile -pl blog`
+2) Serve locally with live reload
+    - `mvn -Pserve -pl blog`
+    - Drafts too: `mvn -Pserve-drafts -pl blog`
+3) Clean generated files
+    - `mvn clean -pl blog`
+
+### Option B: Native Jekyll
+
 1) Install dependencies
     - `bundle install`
 2) Serve locally with live reload
     - `bundle exec jekyll serve --livereload`
     - Drafts too: `bundle exec jekyll serve --livereload --drafts`
-    - Site will be at http://127.0.0.1:4000 (watch the console for the exact URL)
+    - Site will be at http://127.0.0.1:4000
 3) Production build
     - PowerShell: `$env:JEKYLL_ENV = 'production'; bundle exec jekyll build`
 
 Common Scripts and Commands
 
-- Start dev server: `bundle exec jekyll serve --livereload`
-- Start dev server incl. drafts: `bundle exec jekyll serve --drafts --livereload`
-- Build (dev): `bundle exec jekyll build`
-- Build (prod): `$env:JEKYLL_ENV = 'production'; bundle exec jekyll build`
+- **Maven Build**: `mvn compile -pl blog`
+- **Maven Serve**: `mvn -Pserve -pl blog`
+- **Maven Serve (Drafts)**: `mvn -Pserve-drafts -pl blog`
+- **Native Serve**: `bundle exec jekyll serve --livereload`
+- **Native Build (Prod)**: `$env:JEKYLL_ENV = 'production'; bundle exec jekyll build`
 
 Environment Variables
 
