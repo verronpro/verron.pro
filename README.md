@@ -1,7 +1,9 @@
 # Joseph Verron — Blog (Jekyll)
 
-A static blog for software craftsmanship and docs‑as‑code topics. Built with Jekyll and served via GitHub Pages. Content
-is Markdown‑only; diagrams are rendered client‑side to remain compatible with GitHub Pages (no custom plugins required).
+A static blog for software craftsmanship and docs‑as‑code topics. Built with
+Jekyll and served via GitHub Pages. Content
+is Markdown‑only; diagrams are rendered client‑side to remain compatible with
+GitHub Pages (no custom plugins required).
 
 Overview
 
@@ -14,12 +16,14 @@ Overview
 Requirements
 
 - Ruby (>= 3.0 recommended) and Bundler
-    - Windows: use RubyInstaller with MSYS2; run `ridk install` to provision dev tools
+    - Windows: use RubyInstaller with MSYS2; run `ridk install` to provision dev
+      tools
 - Git
 
 Setup
 
-The blog can be managed using either native Jekyll commands (requires Ruby) or via Maven (preferred for project consistency).
+The blog can be managed using either native Jekyll commands (requires Ruby) or
+via Maven (preferred for project consistency).
 
 ### Option A: Maven
 
@@ -48,21 +52,25 @@ Common Scripts and Commands
 - **Maven Serve**: `mvn -Pserve -pl blog`
 - **Maven Serve (Drafts)**: `mvn -Pserve-drafts -pl blog`
 - **Native Serve**: `bundle exec jekyll serve --livereload`
-- **Native Build (Prod)**: `$env:JEKYLL_ENV = 'production'; bundle exec jekyll build`
+- **Native Build (Prod)**:
+  `$env:JEKYLL_ENV = 'production'; bundle exec jekyll build`
 
 Environment Variables
 
-- JEKYLL_ENV: set to `production` for optimized builds (minification, etc.). Default is `development`.
-- TODO: Document any additional env vars if introduced later (e.g., analytics toggles). None required today.
+- JEKYLL_ENV: set to `production` for optimized builds (minification, etc.).
+  Default is `development`.
+- TODO: Document any additional env vars if introduced later (e.g., analytics
+  toggles). None required today.
 
 Project Structure
 
 - `_posts/` — published posts, filenames `YYYY-MM-DD-slug.md`
 - `_drafts/` — unpublished drafts (served with `--drafts`)
 - `_data/` — site data (`authors.yml`, `navigation.yml`, etc.)
-- `_includes/` — partials (head, header, footer, structured data, SVG, home sections)
+- `_includes/` — partials (head, header, footer, structured data, SVG, home
+  sections)
 - `_layouts/` — page layouts
-- `assets/` — CSS and static assets (custom styles in `assets/css/custom.css`)
+- `assets/` — CSS and static assets (styles in `assets/css/stylesheet.css`)
 - `index.md`, `about.md`, `archive.md` — root pages
 - `_config.yml` — site configuration (title, url/baseurl, plugins)
 - `Gemfile` — Ruby gems (github-pages, jekyll-feed, Windows helpers)
@@ -70,12 +78,14 @@ Project Structure
 
 ## Diagrams as Code pipeline
 
-This site renders diagrams client‑side to stay compatible with GitHub Pages (no custom Jekyll plugins required).
+This site renders diagrams client‑side to stay compatible with GitHub Pages (no
+custom Jekyll plugins required).
 
 Supported authoring patterns:
 
 - Mermaid: fenced blocks
-- PlantUML and Graphviz/DOT: rendered via Kroki (https://kroki.io) using client‑side compression.
+- PlantUML and Graphviz/DOT: rendered via Kroki (https://kroki.io) using
+  client‑side compression.
 
 How to write diagrams
 
@@ -104,8 +114,10 @@ How to write diagrams
 
 Notes
 
-- Rendering happens in the browser. Internet access to cdn.jsdelivr.net and kroki.io is required for full rendering.
-- Dark mode is supported through CSS tokens; diagrams are embedded as SVGs where possible.
+- Rendering happens in the browser. Internet access to cdn.jsdelivr.net and
+  kroki.io is required for full rendering.
+- Dark mode is supported through CSS tokens; diagrams are embedded as SVGs where
+  possible.
 - Print styles collapse the two‑column layout to a single column.
 
 Content and Writing Conventions
@@ -118,13 +130,16 @@ Content and Writing Conventions
 Entry Points
 
 - Local dev server uses Jekyll’s built‑in server (`bundle exec jekyll serve`).
-- GitHub Pages builds the site on push using the `github-pages` gem versions; avoid custom plugins.
+- GitHub Pages builds the site on push using the `github-pages` gem versions;
+  avoid custom plugins.
 
 License
-The repository uses CC0 1.0 Universal (see LICENSE). Content and code in this repo are released to the public domain to
+The repository uses CC0 1.0 Universal (see LICENSE). Content and code in this
+repo are released to the public domain to
 the extent possible under the law.
 
 Maintenance Notes
 
-- Dependabot/Renovate: A `renovate.json` exists; extend carefully if adding Ruby dependency automation. (See repo root.)
+- Dependabot/Renovate: A `renovate.json` exists; extend carefully if adding Ruby
+  dependency automation. (See repo root.)
 - TODO: Document theme customizations and any layout decisions if they evolve.

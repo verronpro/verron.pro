@@ -186,7 +186,8 @@ Avoid absolute `http://localhost:` links in committed content.
 Logo SVG lives in `_includes/svg/logo.svg`; favicons under `_includes/head` and root `favicon*.png/ico` plus
   `browserconfig.xml` and `ms-icon*` variants.
 
-Custom CSS entry point: `assets/css/custom.css` is linked from `_includes/head/favicon.html`. Use this file to
+Custom CSS entry point: `assets/css/stylesheet.css` is linked from 
+`_includes/head/favicon.html`. Use this file to
   define design tokens and light component styling; avoid heavy theme overrides.
 
 Design tokens (CSS variables) currently defined: `--cc-primary`, `--cc-accent`, `--cc-text`, `--cc-muted`,
