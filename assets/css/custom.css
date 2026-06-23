@@ -653,8 +653,8 @@ tbody tr:nth-child(even) {
 @media print {
     body {
         font-family: Georgia, "Times New Roman", serif;
-        color: #000;
-        background: #fff;
+        color: black;
+        background: white;
     }
 
     .btn, nav, header, footer, .bottom-nav {
@@ -663,7 +663,7 @@ tbody tr:nth-child(even) {
 
     .card, .post-card, pre, .diagram-source, .diagram-render {
         border: none;
-        background: #fff;
+        background: white;
     }
 
     a[href^="http"]::after {
