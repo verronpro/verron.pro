@@ -5,6 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <name>Verron.pro blog</name>
+    <groupId>pro.verron</groupId>
     <artifactId>blog</artifactId>
     <packaging>pom</packaging>
     <description>Jekyll blog</description>
