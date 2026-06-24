@@ -8,3 +8,4 @@ vendor/
 .idea/
 /.junie/memory/
 *.iml
+/target/
