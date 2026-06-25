@@ -1,0 +1,95 @@
+// suppress inspection "AsciiDocLinkResolve" for whole file
+:ghos: https://github.com/verronpro/blog
+:wrkf: {ghos}/actions/workflows
+:blog: https://verron.pro
+
+= Joseph Verron — Blog
+
+image:{wrkf}/jekyll.yml/badge.svg[Build Status, link={wrkf}/jekyll.yml]
+
+== Introduction
+
+A static blog for software craftsmanship and docs‑as‑code topics. Built with Jekyll and served via GitHub Pages.
+
+Content is Markdown‑only; diagrams are rendered client‑side to remain compatible with GitHub Pages (no custom plugins required).
+
+== Key Features
+
+* **Static Site Generation**: Powered by Jekyll (via `github-pages` gem).
+* **Docs-as-Code**: Content written in Markdown under `_posts/` and `_drafts/`.
+* **Diagrams-as-Code**: Client-side rendering of Mermaid, PlantUML, and Graphviz/DOT via Kroki.
+* **Modern Design**: Support for dark mode and print-friendly styles.
+* **Maven Integration**: Manage the blog using Maven for consistency with other projects.
+
+== Quick Start
+
+The blog can be managed using either Maven or native Jekyll commands.
+
+=== Using Maven
+
+[source,bash]
+----
+# Build the site
+mvn compile -pl blog
+
+# Serve locally with live reload
+mvn -Pserve -pl blog
+
+# Serve with drafts
+mvn -Pserve-drafts -pl blog
+
+# Clean generated files
+mvn clean -pl blog
+----
+
+=== Using Native Jekyll
+
+[source,bash]
+----
+# Install dependencies
+bundle install
+
+# Serve locally with live reload
+bundle exec jekyll serve --livereload
+
+# Serve with drafts
+bundle exec jekyll serve --livereload --drafts
+----
+_Site will be available at http://127.0.0.1:4000_
+
+== Project Structure
+
+* `_posts/` — Published posts, filenames `YYYY-MM-DD-slug.md`
+* `_drafts/` — Unpublished drafts
+* `_data/` — Site data (authors, navigation, etc.)
+* `_includes/` — Partial templates
+* `_layouts/` — Page layouts
+* `assets/` — CSS and static assets
+* `_config.yml` — Jekyll site configuration
+* `Gemfile` — Ruby dependencies
+
+== Diagrams as Code
+
+This site renders diagrams client‑side to stay compatible with GitHub Pages.
+
+Supported formats:
+
+* **Mermaid**: Use fenced code blocks with `mermaid` language.
+* **PlantUML**: Rendered via Kroki using `plantuml` language.
+* **Graphviz/DOT**: Rendered via Kroki using `dot` language.
+
+[source,markdown]
+----
+```mermaid
+flowchart TD
+  A --> B
+```
+----
+
+== Author
+
+Joseph Verron - {blog}/about.html[About Me]
+
+== License
+
+CC0 1.0 Universal. Content and code in this repo are released to the public domain to the extent possible under the law.
