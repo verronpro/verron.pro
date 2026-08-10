@@ -1,7 +1,7 @@
-# Project: Joseph Verron — Blog (Jekyll)
+# Blog (Jekyll) — AGENTS.md
 
-This document covers Jekyll-specific guidelines. For general development, testing, and Java style rules, see the
-root [.junie/AGENTS.md](../../.junie/AGENTS.md).
+Agent-agnostic guidance for working in the **blog** (Jekyll) project. This file is the standalone
+guidance for this project; it does not assume any relationship to other projects.
 
 ## Build and Configuration Instructions
 
