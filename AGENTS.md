@@ -82,6 +82,23 @@ Keep paragraphs short (max 4–5 lines). Use lists for sequences and checklists.
 
 English by default. If bilingual content is added, keep one post per language; do not mix.
 
+### The voice (human-first, de-AI)
+
+Anchor writers: Joel Spolsky, Martin Fowler, Robert C. Martin — direct, concrete, warm, and opinionated
+only where it matters.
+
+- **Lean into Joseph's idiolect.** French-inflected English is the fingerprint: "a punctual need",
+  "globally" (meaning "overall"), "I profited to…". Keep it; it is what makes the prose recognisably
+  human and recognisably his.
+- **Concrete over aphorism.** End on a fact, a number, or a concrete next step — not on a polished
+  one-liner. At most ONE real insight ("clincher") per post.
+- **Kill the AI tells.** No "Not X. It is Y." constructions; no em-dash asides; no performative
+  sincerity ("Honestly…", "The surprising part is…"); no tidy triads; no buzzword titles; irregular
+  sentence rhythm (mix short and long); use contractions.
+- **Register by post type.** A Monthly Commit reads like an engineer's log (terse, factual, numbers
+  and specifics). A Monthly Topic or personal post reads like a short essay (narrative + reflection,
+  still no clincher). A How-to is steps-first.
+
 ### Post types and expectations
 
 1) Monthly Commit (project maintenance journal)

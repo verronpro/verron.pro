@@ -13,8 +13,8 @@ format without touching the core.
 
 Commit: [`b748e83`]({{site.ghos}}/commit/b748e83)
 
-I had a punctual need in my new team at EDF China: stamp data into PowerPoint
-decks and repeat slides for each element of a collection. It made me eager to
+I had a punctual need in my new team in China: stamp data into PowerPoint decks
+and repeat slides for each element of a collection. It made me eager to
 apply the same mental model we use for Word. Instead of bolting format logic
 into the core, I treated PPTX as an adapter at the edges and used this as a test
 of the engine's design: placeholders → resolvers → traversal/execution.

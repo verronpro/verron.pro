@@ -3,9 +3,9 @@ layout: article
 title: A New Chapter in Beijing - Love, Career, and New Adventures
 date: 2024-02-01 09:00:00
 categories: [ personal ]
-tags: [ beijing, career-change, relocation, china, edf, software-development, open-source, office-stamper, life-update ]
+tags: [ beijing, career-change, relocation, china, energy, software-development, open-source, office-stamper, life-update ]
 author: Joseph
-description: Moving to Beijing to reunite with my significant other after years of separation due to pandemic restrictions. Transitioning from Software Craftsmanship Coach at TotalEnergies Digital Factory in Paris to IT Manager at EDF China, while continuing to maintain my open-source project office-stamper and share insights on software development best practices.
+description: Moving to Beijing to reunite with my significant other after years of separation due to pandemic restrictions. Transitioning from Software Craftsmanship Coach at a digital factory in Paris to IT Manager at the Chinese subsidiary of a major energy company, while continuing to maintain my open-source project office-stamper and share insights on software development best practices.
 ---
 
 After 14 years together and years of separation due to pandemic restrictions,
@@ -22,8 +22,9 @@ building our life together in the same city.
 ## Professional Transition
 
 This personal milestone coincides with a major professional shift. I'll join
-EDF's Chinese subsidiary as an IT Manager. This means stepping away from my role
-as Software Engineering Coach at TotalEnergies Digital Factory. The position has
+the Chinese subsidiary of a major energy company as an IT Manager. This means
+stepping away from my role as Software Engineering Coach at a digital factory.
+The position has
 been incredibly rewarding. However, opportunities like this don't come often.
 Working with a renowned international company while being closer to my loved one
 was too significant to pass up.
