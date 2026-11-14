@@ -16,7 +16,7 @@ the hood is the most significant since I forked the project.
 Today, I want to dive into the core of this release: the move to a
 **hierarchical context system**.
 
-## The Thesis: Predictability is King
+## The Thesis: Predictability
 
 In a template engine, the most "magical" part is often how expressions (SpEL, in
 our case) find their data. In v2.x, this was a bit of a "flat" affair. While it

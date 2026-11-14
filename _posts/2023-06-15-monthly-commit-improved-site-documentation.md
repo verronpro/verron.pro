@@ -58,9 +58,7 @@ Before (README.md fragment):
 
 ```java
 DocxStamper stamper = new DocxStamperConfiguration().build();
-stamper.
-
-stamp(template, context, out);
+stamper.stamp(template, context, out);
 ```
 
 After (complete, imports + context + close):

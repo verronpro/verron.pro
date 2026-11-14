@@ -90,7 +90,7 @@ realistic hierarchy:
 - School contains 3 grades
 - Each Grade contains 3 classes
 - Each Class contains 5 students
-- Students are rendered in a table with number, name, and age columns The test
+- Students are rendered in a table with number, name, and age columns. The test
   walks the generated document and validates:
 - Correct paragraph counts at each level
 - Proper text interpolation ("Grade No.2 there are 3 classes")

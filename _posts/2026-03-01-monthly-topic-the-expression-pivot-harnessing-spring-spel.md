@@ -13,10 +13,9 @@ possibility of using a fully custom `ExpressionParser`. The goal was to give
 users complete control over how placeholders were evaluated. However, less than
 three months later, I am retiring that feature.
 
-Sometimes, the best way to move forward is to admit that a custom-built
-solution, while elegant, can't compete with a well-established standard. For
-v3.2, we have pivoted back to **Spring SpEL (Spring Expression Language)**
-as our core expression engine.
+A custom-built solution, however elegant, can't compete with an established
+standard. For v3.2, I pivoted back to **Spring SpEL (Spring Expression
+Language)** as the core expression engine.
 
 ## The Problem: The Nested Context Trap
 
@@ -84,7 +83,7 @@ should be the right decision. By focusing on the standard, we have:
 For users, this means your templates can now be far more dynamic. You can use
 SpEL's full range of operators, method calls, and projection features. For me,
 as a maintainer, it means I can stop worrying about expression parsing and focus
-on the document manipulation logic that makes `office-stamper` unique.
+on the document manipulation.
 
 ---
 

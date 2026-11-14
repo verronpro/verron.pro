@@ -14,8 +14,7 @@ significant changes for the long-term health of the project happened in the "
 shadows": the creation of the `utils` module.
 
 This month, I completed the migration of our document traversal logic into a
-dedicated, standalone module. It is more than just a package move; it is a
-commitment to building a "library within a library."
+dedicated, standalone module, a "library within a library."
 
 ## The Thesis: Decoupling the "Dirty Work"
 

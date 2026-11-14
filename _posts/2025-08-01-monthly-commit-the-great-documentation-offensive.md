@@ -24,9 +24,9 @@ Commit: [00c1c82]({{site.ghos}}/commit/00c1c82)
 
 ## Motivation: The Road to 3.0
 
-Version 3.0 isn't just a number; it is a commitment to stability and clarity. I
-want to make it crystal clear how this library has evolved. To do that, I need
-to lower the barrier for contributors—and even for my future self.
+Version 3.0 is a commitment to stability and clarity. I want to make it clear
+how this library has evolved. To do that, I need to lower the barrier for
+contributors and for my future self.
 
 There's a specific kind of technical debt that doesn't show up in compiler
 errors: **ambiguity**. When a method takes a `String` and returns an `Object`,

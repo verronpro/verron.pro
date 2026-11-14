@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Resolver Safety - Managing Nulls, Optionals, and Exception Strategies"
+title: "Resolver Safety: Managing Nulls, Optionals, and Exception Strategies"
 date: 2024-10-01
 categories: [ office-stamper ]
 tags: [ craftsmanship, null-safety, exception-handling, office-stamper, java ]
@@ -185,6 +185,5 @@ data-entry step when a mandatory field is missing.
    empty. If the engine doesn't behave as expected, adjust your
    `ExceptionResolver`.
 
-Robustness isn't about avoiding errors; it is about making them predictable and
-manageable. With `ExceptionResolver`, Office‑stamper gives you the tools to
-fulfill that promise.
+Robustness is about making errors predictable and manageable, and
+`ExceptionResolver` gives you the tools to do it.

@@ -140,5 +140,5 @@ high-fidelity "look and feel" integration tests.
    complex interactions between many Word features (e.g., Charts + Tables +
    Sections).
 
-By letting the code describe the document, we make the engine's behavior
-transparent, documented, and—most importantly—frictionless.
+Letting the code describe the document makes the engine's behavior transparent
+and documented.

@@ -44,15 +44,9 @@ has finished its work.
 
 ```java
 var config = OfficeStamperConfigurations.standard();
-config.
-
-addPostprocessor(Postprocessors.removeOrphanedFootnotes());
-        config.
-
-addPostprocessor(Postprocessors.removeOrphanedEndnotes());
-        config.
-
-addPostprocessor(new CollapseEmptyParagraphs());
+config.addPostprocessor(Postprocessors.removeOrphanedFootnotes());
+config.addPostprocessor(Postprocessors.removeOrphanedEndnotes());
+config.addPostprocessor(new CollapseEmptyParagraphs());
 ```
 
 A concrete post-processor is a simple, focused unit. For example, removing

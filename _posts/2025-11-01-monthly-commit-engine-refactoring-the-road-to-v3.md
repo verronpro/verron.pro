@@ -48,8 +48,8 @@ you can see it in Word, `office-stamper` should be able to stamp it.
 
 ## Towards v3: Non-Greedy Resolution
 
-The most exciting outcome of this refactoring is that it clears the path for *
-*Non-Greedy Resolution**, a game-changer for v3.
+The most exciting outcome of this refactoring is that it clears the path for
+**Non-Greedy Resolution** in v3.
 
 Until now, when a `CommentProcessor` (like a `RepeatProcessor`) contained
 placeholders or inner comments, it had to launch the replacement process *

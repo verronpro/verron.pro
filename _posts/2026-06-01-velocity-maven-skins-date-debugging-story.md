@@ -108,8 +108,8 @@ for any `$date`. There it was, in the `#copyright()` macro:
 #end
 ```
 
-`$date` in Maven Site's Velocity context is *
-*`org.apache.velocity.tools.generic.ComparisonDateTool`**, not `DateTool` —
+`$date` in Maven Site's Velocity context is
+**`org.apache.velocity.tools.generic.ComparisonDateTool`**, not `DateTool` —
 consistent with what I just printed. It exposes `getYear()` (returns
 an `int`), `getMonth()`, `getDay()` — but **no `format()` method**.
 
@@ -155,13 +155,12 @@ and_something` if space exists between the variable and what follows.
 
 ## Don’t Outsource Your Mental Model
 
-“Plausible” advice (from docs, blogs, or AI) is not a substitute for knowing
-what object you're actually calling. The decisive move here was not another
-search query — it was rendering `getClass().getSimpleName()` and then reading
-the macros already in the skin. Old‑school, reliable, fast.
+"Plausible" advice, from docs, blogs, or AI, is not a substitute for knowing
+what object you're actually calling. The decisive move was not another search
+query. It was rendering `getClass().getSimpleName()` and then reading the
+macros already in the skin.
 
-Mindfulness beats cargo culting: pause, observe the real object, confirm with
-a source, then change one thing.
+Pause, observe the real object, confirm with a source, then change one thing.
 
 If you do ask for help, ask concrete questions like: “In Maven Site, what class
 is bound to `$date` in the Velocity context?” You'll either get the right class
@@ -191,9 +190,9 @@ name, or you'll know exactly what to print to find out yourself.
 | `${date.getClass().getSimpleName()}` | ✅ Works — tells you what you’re calling methods on |
 
 If you maintain a Maven skin or use Maven Site's Velocity templates, bookmark
-`ComparisonDateTool` in the Velocity Tools javadoc — and bookmark your own
-curiosity. The fix was one line; the win was remembering to observe the system
-in front of me before believing someone else’s model of it.
+`ComparisonDateTool` in the Velocity Tools javadoc. The fix was one line; the
+win was observing the system in front of me before believing someone else's
+model of it.
 
 ### A note on Velocity itself
 

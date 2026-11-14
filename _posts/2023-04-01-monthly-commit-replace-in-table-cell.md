@@ -47,8 +47,8 @@ real work can happen safely.
 
 **2. Code modernization using Java features**
 
-The most visible theme is **pattern matching for instanceof** (Java 14+) and *
-*simplification**:
+The most visible theme is **pattern matching for instanceof** (Java 14+) and
+**simplification**:
 
 ```java
 ObjectDeleter() {

@@ -55,10 +55,10 @@ in prod" surprises.
 
 ### 2. `Stringifier` for Content Assertions
 
-The `Stringifier.stringifyWord` utility is a game-changer for characterization
-tests. It provides a stable, text-based representation of a DOCX document's
-content, making it trivial to use standard AssertJ or JUnit assertions. It
-completely replaces the old, fragile extraction logic.
+The `Stringifier.stringifyWord` utility makes characterization tests much
+simpler. It provides a stable, text-based representation of a DOCX document's
+content, so standard AssertJ or JUnit assertions work directly. It completely
+replaces the old, fragile extraction logic.
 
 ## Impact: Maintenance at Scale
 
@@ -76,8 +76,8 @@ the maintenance surface of the project's test module by nearly 40%.
 
 ## Next Steps
 
-With the test suite modernized, I'm now looking at expanding the *
-*characterization test coverage** for Excel and PowerPoint, applying the same
+With the test suite modernized, I'm now looking at expanding the
+characterization test coverage for Excel and PowerPoint, applying the same
 `Stringifier` pattern to ensure structural fidelity across all supported
 formats.
 

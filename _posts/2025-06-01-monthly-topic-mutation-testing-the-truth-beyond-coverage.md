@@ -119,5 +119,5 @@ at all.
 5. **Design over Assertions**: If a mutant is hard to kill, ask if the code can
    be simplified or if the logic is truly necessary.
 
-By embracing the truth revealed by mutation testing, we ensure that
-`office-stamper` isn't just "covered," but genuinely robust.
+Mutation testing ensures `office-stamper` isn't just covered, but genuinely
+robust.

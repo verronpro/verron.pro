@@ -5,7 +5,7 @@ date: 2025-01-01
 categories: [ office-stamper ]
 tags: [ craftsmanship, testing, office-stamper, java, docs-as-code ]
 author: Joseph
-description: Why moving from brittle XML-based unit tests to holistic characterization tests is a game-changer for complex document processing engines.
+description: Why holistic characterization tests beat brittle XML-based unit tests for complex document processing engines.
 ---
 
 In the world of document automation, we often fall into the trap of testing
@@ -140,5 +140,5 @@ the "scary" parts of the engine without fear.
 5. **Isolate the Core**: Ensure your high-level tests aren't coupled to the same
    interfaces you're trying to refactor.
 
-By focusing on what the user sees, we make our tests more resilient, our
-documentation more accurate, and our maintenance more sustainable.
+Focusing on what the user sees makes the tests more resilient and the
+documentation more accurate.

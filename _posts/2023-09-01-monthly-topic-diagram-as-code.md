@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Diagrams as Code; Practical Benefits in Real-World Projects"
+title: "Diagrams as Code: Practical Benefits in Real-World Projects"
 date: 2023-09-01 09:00:00
 categories: [ documentation-as-code ]
 author: Joseph

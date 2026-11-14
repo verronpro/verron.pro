@@ -13,8 +13,8 @@ from "adding features" to "ensuring predictability." One of the most significant
 architectural shifts in this version is how we traverse the document.
 
 This month, I replaced our paragraph streaming logic with a custom, resetable
-iterator. It might sound like a step back from modern functional Java, but in
-the world of document stamping, it is a massive leap forward for reliability.
+iterator. It's less "modern" than a Java Stream, but far more reliable for
+document stamping.
 
 ## The Problem: Mutation during Iteration
 

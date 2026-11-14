@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Make Tests Tell a Story, Generalizing Result Descriptions"
+title: "Make Tests Tell a Story: Generalizing Result Descriptions"
 date: 2023-11-01
 categories: [ office-stamper ]
 tags: [ office-stamper,testing, craftsmanship, agility, docs-as-code, solo-maintainer, enterprise, readability, maintainability ]
@@ -68,16 +68,14 @@ than re‑derive it from low‑level details.
 // Before: brittle DOM traversal
 assertRowContainsText(tableRows.get(0), "Homer");
 
-assertTrue(cellContent.contains(text), 
-    String.
-
-format("'%s' is not in '%s'",text, cellContent));
+assertTrue(cellContent.contains(text),
+    String.format("'%s' is not in '%s'", text, cellContent));
 
 // After: readable narrative assertion
 assertEquals("""
     This table row should be expanded to multiple rows: Homer.
     This table row should be expanded to multiple rows: Marge.
-    ...""",stamper.stampAndLoadAndExtract(template, context));
+    ...""", stamper.stampAndLoadAndExtract(template, context));
 ```
 
 ## Agile and craftsmanship lens

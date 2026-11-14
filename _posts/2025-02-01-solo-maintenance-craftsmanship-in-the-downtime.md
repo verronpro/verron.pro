@@ -8,12 +8,11 @@ tags: [ agility, craftsmanship, docs-as-code, solo-maintainer, enterprise, proce
 description: Sustainable practices for solo maintainers. Embracing constraints, coffee-shop rituals, and the power of 'not yet'.
 ---
 
-Solo maintenance isn't a day job—especially when your day job is managing IT in
-a different time zone. Success isn't measured by commit frequency but by
+Solo maintenance isn't a day job, especially when your day job is managing IT
+in a different time zone. Success isn't measured by commit frequency but by
 sustained changeability, and the ability to pick up exactly where you left off,
-whether you're in a Beijing coffee shop or on a long commute. Embracing the
-constraints of limited time and unreliable networks isn't just a survival
-tactic; it is a forcing function for better design.
+whether you're in a Beijing coffee shop or on a long commute. The constraints of
+limited time and unreliable networks push toward better design.
 
 # Technique: Sustainable Rhythm
 
@@ -39,7 +38,7 @@ To make this work, I've had to master two things:
 
 ## Strategic "Not Yet"
 
-Restraint isn't just about saying "no"; it is about "not yet."
+Restraint isn't only about saying no. It's also about "not yet."
 Take [Issue #80]({{site.ghos}}/issues/80)—"Only attempt to resolve variable if they
 actually are shown." It has been pending since October 2022. I haven't ignored
 it; I've been waiting for the library's architecture to be ready to handle it

@@ -12,8 +12,8 @@ description: >
 toc: true
 ---
 
-You have a DOCX template. You run the stamper. You get either a blank output,
-a cryptic stack trace, or — worst of all — a silently wrong document.
+You have a DOCX template. You run the stamper. You get a blank output, a
+cryptic stack trace, or a silently wrong document.
 
 The office-stamper CLI has three tools built specifically for this situation.
 This post shows you how to use them, with real command examples, and the source
@@ -259,7 +259,7 @@ have a near-live preview loop without leaving your editor.
 
 ## Summary
 
-The office-stamper CLI is not just a stamping tool — it is a debugging toolkit.
+The office-stamper CLI is a debugging toolkit as much as a stamping tool.
 
 - Use `--dry-run` to catch unresolved placeholders before they reach production.
 - Use `--report` to trace every resolution when the output is wrong but no
@@ -267,6 +267,3 @@ The office-stamper CLI is not just a stamping tool — it is a debugging toolkit
 - Use `diagnostic` to capture the full runtime environment for reproducible bug
   reports.
 - Use `--watch` to iterate on templates without a manual re-run cycle.
-
-The goal is to make template failures *loud and specific* rather than *silent
-and mysterious*.

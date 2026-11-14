@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "The Solo Maintainer's Toolbelt: Craftsmanship as a Shield Against Decay"
+title: "The Solo Maintainer's Toolbelt"
 date: 2026-06-08
 categories: [ craftsmanship, tooling ]
 tags: [ governance, ci, craftsmanship, solo-maintainer, renovate, qodana, mutation-testing, maven ]
@@ -17,10 +17,8 @@ the day-to-day topics are mostly unrelated—requires a specific kind of
 discipline. Currently, I oversee several projects: `office-stamper`, the
 `asciidoc` tooling module, `imageio` plugins, and a custom `maven-skin`.
 
-The survival of these projects depends on a system that favors *feedback
-loops* over *manual toil*. This isn't just about efficiency; it's about
-bringing the principles of craftsmanship into both the workplace and the
-open-source community.
+The survival of these projects depends on a system that favors feedback loops
+over manual toil.
 
 ---
 
@@ -32,10 +30,9 @@ discovered during the development of the **office-stamper** library. Similarly,
 the **maven-skin** module was born from a desire to harmonize the look and feel
 of my projects' documentation with this technical blog.
 
-These tools are not just side projects; they are the foundation for my future
-endeavors with Beijing technology entrepreneurs. To keep them alive, I need to
-organize myself so that most maintenance can be handled in "shortish"
-timeframes.
+These tools are the foundation for what I want to build next with other
+entrepreneurs in Beijing. To keep them alive, I need to organise myself so most
+maintenance fits in short timeframes.
 
 ---
 
@@ -90,9 +87,7 @@ without being overwhelmed.
 
 ## Conclusion
 
-The risk of letting things pass is real when you're a solo maintainer. By
-investing in a good CI pipeline, mutation testing, and automated scanners, I've
-built a system that lets me maintain a professional standard of craftsmanship
-without burning out. The machine does the worrying; I do the deciding.
-
-Build the feedback loops first. The features can wait.
+The risk of letting things pass is real when you're a solo maintainer. A good
+CI pipeline, mutation testing, and automated scanners let me keep a professional
+standard of craftsmanship without burning out. The machine does the worrying; I
+do the deciding.

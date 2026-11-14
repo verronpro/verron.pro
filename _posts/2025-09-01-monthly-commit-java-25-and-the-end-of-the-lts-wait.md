@@ -19,7 +19,7 @@ next LTS arrives, the jump is massive, the breaking changes are numerous, and
 the effort required is exhausting.
 
 This month, I decided to break that cycle. `office-stamper` is now baseline Java
-25\.
+25.
 
 ## Context: The State of the Art
 
