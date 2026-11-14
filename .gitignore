@@ -10,7 +10,5 @@ vendor/
 *.iml
 /target/
 
-# Local working notes and held (proprietary) drafts — never committed to the public repo
+# Local working notes — never committed to the public repo
 backfill-plan-2026.md
-_drafts/*emberzi-*.md
-_drafts/2026-06-30-founding-a-company-what-i-learned.md
