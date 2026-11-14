@@ -35,10 +35,11 @@ tree.
 @endjson
 ```
 
-Because it's trivial to make software print PlantUML-format text, I add debug
-endpoints that return JSON or YAML this way. Instead of parsing a thousand log
-lines, a developer hits an endpoint and sees the current configuration as an
-image.
+Because it's trivial to make software print PlantUML-format text, we went one
+step further on a past project: a debug interface that generated a command UI
+straight from the system's own JSON self-description. The machine described
+itself, and the interface appeared. No hand-built admin screen, and nothing to
+keep in sync.
 
 ## Regular expressions
 
@@ -70,9 +71,10 @@ about function and flow, not pixel-perfect design.
 @endsalt
 ```
 
-I use it with business analysts. When they describe a feature, I type a Salt
-mockup instead of writing a spec. If they want the OK button on the left, I move
-it in two seconds.
+I've used it with business analysts, and it was useful once. But Salt isn't
+wieldy enough for live discussion yet. It's missing some UI elements to express
+a screen quickly, and I never got fluent enough with the syntax to sketch in
+real time. A whiteboard still wins when speed matters.
 
 ## MindMaps
 

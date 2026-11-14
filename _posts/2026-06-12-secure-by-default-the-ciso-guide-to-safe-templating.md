@@ -21,6 +21,10 @@ Templating engines often use expression languages like SpEL. Left in permissive
 mode, an expression can reach into the JVM's classpath, instantiate objects, or
 pull off an XXE attack through embedded SVG.
 
+This isn't theoretical. I can reproduce it in a test, and it was a user who
+raised it with me, someone who had clearly worried about the same thing in his
+own context.
+
 ## The restricted baseline
 
 In `office-stamper`, `SecurityMode.RESTRICTED` is the default for both SpEL and

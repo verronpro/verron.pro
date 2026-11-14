@@ -20,7 +20,10 @@ When I talk about craftsmanship, I mean the technical choices that make a system
 resilient. For `office-stamper`:
 
 - **Mutation testing (PIT)** — line coverage says which lines ran; mutation
-  testing proves the tests actually catch bugs.
+  testing proves the tests actually catch bugs. It found code that, executed or
+  not, had no effect on any test: either useless or untested, and I had cases of
+  both. It also flagged an infinite loop that a particular condition could have
+  triggered.
 - **A strict API** — consolidating the surface in v3.1 and v3.2 reduced the room
   for misuse.
 - **Continuous quality** — Qodana analysis on every commit keeps the bar from

@@ -11,10 +11,16 @@ description: >
 toc: true
 ---
 
-Architectures fail from poor visibility more often than from bad code. You
-spend so long on the implementation that the structure and distribution go
-unseen. These diagrams make the "where" and "what" visible, and they live in the
-same Git repo as the code.
+Architectures fail from poor visibility more often than from bad code. In one of
+my first jobs, a design issue ate three days of argument, and it only resolved
+when we drew the full application and the single possible solution finally
+became visible.
+
+So I want structure visible, and I want it editable. Too often the "architecture
+diagram" is a screenshot pasted into a Word document, or a Visio file I can't
+open because I don't have the licence. And in a live meeting, I don't want to
+fight a drag-and-drop tool to connect an arrow to the right box. These diagrams
+live in the Git repo as text, and I edit them live.
 
 ## Component diagrams
 

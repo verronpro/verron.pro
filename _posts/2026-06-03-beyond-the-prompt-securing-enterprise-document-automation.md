@@ -18,10 +18,16 @@ unforgiving.
 
 ## The compliance gap
 
+I've watched an LLM drift from its own example. You give it a template to
+follow, and the longer the conversation runs, the less it respects the original.
+But the real issue is compliance, not generation. When a company changes a
+template, every document has to follow; what the AI was told a few prompts ago
+doesn't matter.
+
 Prompt an AI to "write a contract" and you get a wall of text. An enterprise
 contract needs specific styles, metadata, and a structure that won't break when
-opened in Word. More than that, it needs governance: someone has to vouch that
-the document says what it should, and nothing else.
+opened in Word, plus someone to vouch that the document says what it should and
+nothing else. That someone is the deterministic template, not the model.
 
 ## Bridging the gap: AI plus deterministic stamping
 

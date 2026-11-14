@@ -60,7 +60,8 @@ the diagram is most of the implementation plan.
 ## Work breakdown structure
 
 Before a timeline, a [WBS](https://plantuml.com/fr/wbs-diagram) breaks the work
-down.
+down. I use it as an ad-hoc format for a specific discussion or deliverable, not
+something I keep alive.
 
 ```plantuml
 @startwbs
@@ -90,5 +91,7 @@ to time.
 @endgantt
 ```
 
-Seeing dependencies mapped in the same repo as the code makes them a shared
-constraint, not a manager telling people to hurry.
+The Gantt is the one I keep updating as the project's real life changes. It
+keeps people on different teams honest about where a delay actually comes from,
+and why their feedback at a given moment matters for someone else to deliver on
+time.

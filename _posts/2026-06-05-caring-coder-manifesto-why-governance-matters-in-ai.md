@@ -21,6 +21,11 @@ In high-stakes sectors, "good enough" automation isn't good enough. If a
 document generator produces a faulty safety report because an LLM was
 unconstrained, the coder is responsible, not the model.
 
+Compressed to one rule: maintain a CI process that integrates and blocks every
+quality check relevant to your activity. CI your CI. Tests, static analysis,
+mutation testing, the build itself — if it matters, it blocks. If it doesn't
+block, it stops mattering.
+
 ## Why I keep caring
 
 I'll keep caring about document generation as AI gets better, because the
