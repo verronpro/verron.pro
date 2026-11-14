@@ -20,5 +20,6 @@ Doing it screen by screen matters. A visual redesign applied all at once breaks
 everything at once. Rebuilding one screen at a time, with a snapshot test on
 each, keeps the app working while it changes.
 
-Canvas v4 was efficient, but too flat and impersonal. We lived with it for a
-while, then moved to a v2 with more grain and atmosphere.
+Canvas v4 was efficient, but too flat and impersonal. In October we moved to a
+v2 that added what v4 lacked: a Wada palette, ink and paper surfaces, a subtle
+grain, and card-reveal animations. It shipped as release 1.2.0.
