@@ -19,5 +19,9 @@ minimal intro screen. The highlight-span contract is the part that matters: the
 card has to mark up which part of the sentence illustrates the grammar point,
 and that markup has to survive the pipeline that produces the card.
 
-Teaching grammar by card rather than note means the learner reviews it like
-vocabulary, on a schedule, instead of reading it once.
+Grammar is different from vocabulary. A word doesn't need much explanation, but
+a grammar point does: it describes a sentence structure that doesn't exist in
+the learner's own language. The card has to carry that explanation. Eventually
+grammar should leave the card queue for dedicated activities — multiple choice,
+fill-the-gap, understanding checks — but a scheduled card is enough to stop it
+being read once and forgotten.

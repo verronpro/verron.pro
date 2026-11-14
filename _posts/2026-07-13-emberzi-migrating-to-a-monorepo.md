@@ -16,10 +16,15 @@ it into a pnpm + Turborepo workspace: `apps/` for the mobile app and the corpus
 tooling, `packages/` for the UI components, design tokens, the spaced-repetition
 core, and the content pipeline.
 
-The point is dependency direction. The review engine (`srs-core`) doesn't import
-the app, and the content pipeline doesn't import either. Once that's enforced, a
-change to one package can't silently leak into another, and each package gets a
-test suite it actually owns.
+Why one repo instead of several: my partner isn't at ease with git, so a single
+checkout minimizes his friction. And early in a project the technical boundaries
+change constantly. One repo links a change across packages in one commit, instead
+of leaving two repos to be kept in sync.
+
+The point of the split inside that repo is dependency direction. The review
+engine (`srs-core`) doesn't import the app, and the content pipeline doesn't
+import either. Once that's enforced, a change to one package can't silently leak
+into another, and each package gets a test suite it actually owns.
 
 The cost is tooling. Metro has to resolve `@ember/*` imports out of `packages/`,
 and pnpm on Windows has its own sharp edges with native dependencies. But the

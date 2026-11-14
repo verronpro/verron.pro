@@ -10,8 +10,10 @@ description: >
   in-house gloss corpus as a fourth content source.
 ---
 
-The app shipped with its content baked in. That made every corpus change a full
-release, and it tied the content licensing to the app's.
+The app shipped with its content baked in. The main problem was licensing: the
+content's licences were tangled up with the app's, so the corpus couldn't ship
+or change on its own terms. Release cadence came a close second, because every
+corpus edit also meant a full app release.
 
 This work split content out: bundled packages, runtime delivery from a CDN, and
 a consent-gated dictionary. On top of that, ADR-0012 added a fourth content

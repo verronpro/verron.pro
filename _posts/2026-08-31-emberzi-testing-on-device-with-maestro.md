@@ -16,6 +16,9 @@ input, the rendering, the navigation.
 
 This adds an on-device Android layer driven by Maestro. The same behaviour specs
 now run against a handset, with glue that drives the app the way a person does.
+The pragmatic reason is speed: virtualisation without a dedicated processing
+unit is slow, and a real device runs faster and gives a more compelling preview
+of the UI than any virtual screen.
 
 Two things took longer than expected. The first is text input: a Chinese pinyin
 keyboard holds injected Latin keystrokes in its composition buffer and never

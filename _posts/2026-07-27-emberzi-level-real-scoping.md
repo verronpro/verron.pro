@@ -11,8 +11,10 @@ description: >
 ---
 
 The learner picks a level, but for a while the study session didn't take that
-pick seriously enough. The deck picker could drop a level, and the session could
-draw from the wrong pool.
+pick seriously. You'd declare yourself at HSK 3 and the review kept handing you
+words from the lowest level, the ones you hadn't revised yet. The picker and the
+session could quietly draw from different pools. It felt like the app had
+ignored your choice.
 
 This change makes the active HSK level a hard wall. The deck picker is
 data-driven off the level list instead of a hand-maintained window, and the

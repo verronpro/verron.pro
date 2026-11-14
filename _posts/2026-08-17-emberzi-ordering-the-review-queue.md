@@ -9,9 +9,12 @@ description: >
   The review queue used to interleave everything. ADR-0022 orders it by note type, in stages.
 ---
 
-The review queue mixed every kind of card together. ADR-0022 orders it by note
-type: the bucket derivation, then the drain, then the re-insertion of an `again`
-card, then the persistence of a pending card across launches.
+The review queue mixed every kind of card together. A session had no rhythm: a
+block of grammar, then scattered vocabulary, then a review of something you
+hadn't seen in weeks. You couldn't tell what the app wanted you to do next, or
+why. ADR-0022 orders the queue by note type: the bucket derivation, then the
+drain, then the re-insertion of an `again` card, then the persistence of a
+pending card across launches.
 
 It landed in stages, one small piece per commit, each with its own test. The
 staging matters because the queue is the part of a spaced-repetition app that a
