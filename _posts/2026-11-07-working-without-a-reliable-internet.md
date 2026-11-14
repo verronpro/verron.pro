@@ -20,6 +20,11 @@ The tools that paper over the gap between China and Western services, the VPNs,
 keep getting harder to use. Servers vanish, protocols get throttled, and the
 thing that worked last month quietly stops working this month.
 
+Concretely: Google services don't work, most AI services don't work, and HTTPS
+to GitHub is blocked or throttled at best. It cuts both ways. Even with a VPN
+up, I can't reach the 163.com mail API or the chinesetest.com corpus from the
+other side.
+
 I won't pretend this is anything other than what it is: friction, imposed from
 outside, on anyone doing ordinary remote work. But there's a difference between
 a constraint you can change and one you can only design around. This one is the

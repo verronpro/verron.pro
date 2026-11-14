@@ -29,11 +29,17 @@ Proprietary is a defence against that, not an ideology. I've stopped arguing.
 
 ## The agreement
 
-Designing the partnership agreement was the first real lesson. It has to be fair
-when both of us stay, and fair when one of us doesn't. What happens if one
-partner stops contributing early? The agreement has to answer that before it
-happens, not after, because after is when everyone is angry and no one wants to
-negotiate.
+We were mostly in sync on the big things. The one point that took work was
+agreeing from when we start spending our own money on the venture. That's a
+harder line than it sounds, because it's where "we'll build something together"
+becomes a financial commitment.
+
+The agreement also covers the uncomfortable case: what happens if one of us
+stops contributing early. That has to be written down before it happens, not
+after, because after is when everyone is angry and no one wants to negotiate.
+
+What we both agree matters most is simpler: stay in touch, so either of us can
+ask the other for whatever we need to progress.
 
 ## The tooling loss
 

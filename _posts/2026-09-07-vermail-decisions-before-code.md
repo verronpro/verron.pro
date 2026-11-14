@@ -28,6 +28,13 @@ rewrite as an architecture.
 The build stood up the Enforcer and ArchUnit gates before the feature code, so
 the first line of real code already had something checking its boundaries.
 
+The trigger was simple: I planned to let AI write most of the code. When you
+move through features that fast, decisions get made without a record, and a few
+weeks later you can't say why the store is shaped a certain way. So the ADRs,
+most of them written by the same AI, are the log. Any agent discussion or
+notable decision gets written down, so I can reconstruct the context later and
+keep taking informed decisions as the project matures.
+
 For a solo project this matters more, not less. I have no one to argue with, so
 the ADR is the argument written down, the one I can have with my future self.
 When I come back to the codebase weeks later, the why is already there.

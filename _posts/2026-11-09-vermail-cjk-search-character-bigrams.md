@@ -16,8 +16,12 @@ The default SQLite tokeniser, `unicode61`, splits on word boundaries, and a
 run of unspaced Chinese has none. A Chinese message tokenises into one enormous
 term, and recall collapses to 35%.
 
-The easy answer is a word segmenter. I measured four strategies instead of
-picking one.
+I already knew the easy answer and its cost. On Ember字, my Chinese learning
+app, I use a segmenter (jieba) to attach dictionary references to reading text,
+and it's heavy. So I went looking for something cheaper, and the trigram
+technique surprised me: index every three-character window and you sidestep
+segmentation entirely. I measured trigram against bigram and a couple of others
+instead of picking one.
 
 Twenty thousand synthetic messages, four strategies, scored against graded truth:
 

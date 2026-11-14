@@ -12,6 +12,13 @@ description: >
 Two things got settled in September. The product got a name, Ember字, and a
 licence that reflects what it actually is.
 
+The name is two halves. "Ember" is the warm little light you keep alive every
+day so you can start a fire the next morning. "字" is a Chinese character.
+
+The constraints were practical: a name we both liked, a `.com` still free, and
+nothing that stepped on an existing product or referenced HSK. We went through
+HSKMastery, Ember, HanSRS and a few others before one held all three.
+
 The name matters more than it looks. For months the project went by a working
 title, and a working title leaks into everything: the app id, the scheme, the
 launcher label, the docs. Renaming it means touching all of those, and getting

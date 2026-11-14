@@ -39,3 +39,9 @@ The part I keep returning to is reconciliation. It runs on the first sync, on
 every tenth, and on any failure, and it fail-open. It doesn't try to repair a
 broken projection by guessing; it asks the server for the truth and lets the
 diff be the answer.
+
+The honest reason is that I don't trust my cache to stay valid. UIDs are only
+stable until the server rekeys them, and a user can delete a message from their
+web app while my local copy still thinks it exists. No concrete failure has hit
+me yet, the project is too young. But that's exactly when I want the question
+answered, before I'm debugging someone's vanished inbox.

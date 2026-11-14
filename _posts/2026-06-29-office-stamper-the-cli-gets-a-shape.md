@@ -12,7 +12,9 @@ description: >
 
 office-stamper started as a library you embed. The CLI grew on top of it
 organically, and by June 2026 it had accreted into a `Main` class that did too
-much. This commit gives it a shape.
+much. Reading five hundred lines to see a workflow I already knew was the pain.
+A `main` method should read like the workflow it drives. This commit gives it
+that shape.
 
 Two responsibilities were tangled: turning a data file into a SpEL context, and
 reporting what happened. They're now two seams.

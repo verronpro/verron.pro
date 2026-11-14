@@ -27,6 +27,11 @@ The first client increment wired it to a real account: from the settings screen
 you can test an account against a live IMAP/SMTP server before trusting it to
 sync.
 
+The first real surprise was authentication. Every provider does it differently:
+OAuth here, an app password there, and a couple that make you flip a setting in
+their web app before IMAP is allowed outside their own client at all. The
+connection tester had to stop assuming and start asking.
+
 The same pass recorded the first real provider observations: IDLE confirmed off
 one provider, labels confirmed on another. Those became ADR amendments, because
 delivery topology is measured per provider, never inferred from its name.

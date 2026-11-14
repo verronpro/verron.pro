@@ -7,7 +7,7 @@ tags: [ emberzi, performance, react-native, caching ]
 author: Joseph
 description: >
   Startup was 7.6 seconds, and a content snapshot that was supposed to fix it silently never
-  landed. Finding out why took a release build and some logcat archaeology.
+  landed. The cause took several days to find, and it was my own sideloaded deck.
 ---
 
 A cold launch took 7.6 seconds: sources, dictionary, projection, then first
@@ -18,9 +18,16 @@ It didn't. Every launch reported a cache miss, and for a whole release nobody
 noticed, because the snapshot code caught and discarded every error. An absent
 cache and an unreadable one looked identical.
 
-The root cause took a while to find. A stale sideloaded package produced a
-`rejected` read on every launch, and the snapshot logic declined to write
-whenever the read recorded any failure. So no cache was ever written, silently.
+The root cause took several days. The cache seemed to work, debug sessions
+showed nothing, and the bug only appeared on my own device. Then it clicked: I
+was the only person who had sideloaded every deck to try them, and one of them
+sat flagged as non-compliant on a screen that wouldn't let me remove it. I
+started on a small hygiene feature to let me delete a blocked deck, and realised
+that stale package was poisoning the snapshot.
+
+A stale sideloaded package produced a `rejected` read on every launch, and the
+snapshot logic declined to write whenever the read recorded any failure. So no
+cache was ever written, silently.
 
 Two fixes. The failure now travels in the snapshot payload, so a hydrating
 launch can say what it's missing. And only a failure that might still resolve

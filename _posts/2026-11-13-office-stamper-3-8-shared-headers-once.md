@@ -14,9 +14,13 @@ This is a maintenance release with one headline fix and a packaging improvement.
 
 ## Headline — shared headers and footers, once (#805)
 
-A header or footer that is shared by several sections was being visited more
-than once. The smart-tags postprocessor then found a tag it had already
-unwrapped, and threw an `IndexOutOfBoundsException: Index: -1`.
+A header or footer shared by several sections was being visited more than once.
+On the second visit, the smart-tags postprocessor tried to remove a placeholder
+it had already unwrapped and threw an `IndexOutOfBoundsException: Index: -1`.
+
+It wasn't a partial failure. The exception bubbled to the end of the run, so the
+whole document failed to stamp. A template with a shared header was simply
+broken.
 
 The fix is small and lives in one place — a deduplication set plus an index
 guard:
