@@ -4,6 +4,10 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  # Daily rebuild so posts dated in the future publish automatically
+  # when their date arrives, without a new push.
+  schedule:
+    - cron: "0 4 * * *"  # 04:00 UTC = 12:00 Beijing / 05:00 Paris
 
 permissions:
   contents: read
